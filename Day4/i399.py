@@ -1,0 +1,5 @@
+a = list(map(int, input().split()))
+s = set(a)
+max_amount = max([a.count(i) for i in s])
+s = sorted(list(s), reverse=True)
+print(max_amount, *s)
